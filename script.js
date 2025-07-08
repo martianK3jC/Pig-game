@@ -1,3 +1,4 @@
+'use strict';
 const startGameButton = document.querySelector('.start-game');
 const howToPlayButton = document.querySelector('.how-to-play');
 const aboutButton = document.querySelector('.about');
@@ -8,7 +9,7 @@ const closeButtons = document.querySelectorAll('.close');
 const overlay = document.querySelector('.overlay');
 
 const startGame = () => {
-    window.location.href = 'pig-game.html';
+    window.location.href = './game/pig-game.html';
 }
 
 const close = () => {
@@ -16,8 +17,6 @@ const close = () => {
         hidden[i].classList.add('hide');
     }
 }
-
-
 
 const showInfo = () => {
     for(let i = 0; i < hidden.length - 1; i++){
@@ -43,5 +42,5 @@ document.addEventListener('keydown', function(e){
     if(e.key === 'Escape'){
         closeButton();
     }
-})
+});
 
