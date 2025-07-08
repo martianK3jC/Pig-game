@@ -2,22 +2,46 @@ const startGameButton = document.querySelector('.start-game');
 const howToPlayButton = document.querySelector('.how-to-play');
 const aboutButton = document.querySelector('.about');
 
+const hidden = document.querySelectorAll('.hide');
+const closeButtons = document.querySelectorAll('.close');
 
-const closeButton = document.querySelector('#close');
 const overlay = document.querySelector('.overlay');
+
 const startGame = () => {
     window.location.href = 'pig-game.html';
 }
 
-const closeInstructions = () => {
-    howToPlayButton.classList.remove('game-info');
-    overlay.classList.remove('overlay');
+const close = () => {
+    for(let i = 0; i < hidden.length; i++){
+        hidden[i].classList.add('hide');
+    }
 }
 
+
+
 const showInfo = () => {
-    howToPlayButton.classList.add('game-info');
-    overlay.classList.add('overlay');
+    for(let i = 0; i < hidden.length - 1; i++){
+        hidden[i].classList.remove('hide');
+    }
+}
+
+const showAbout = () => {
+    for(let i = 1; i < hidden.length; i++){
+        hidden[i].classList.remove('hide');
+    }
 }
 
 startGameButton.addEventListener('click', startGame);
-closeButton.addEventListener('click', closeInstructions);
+howToPlayButton.addEventListener('click', showInfo);
+aboutButton.addEventListener('click', showAbout);
+for(let i = 0; i < closeButtons.length; i++){
+    closeButtons[i].addEventListener('click', close);
+}
+overlay.addEventListener('click', close);
+
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+        closeButton();
+    }
+})
+
