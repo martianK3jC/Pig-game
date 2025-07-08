@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="game-title">Welcome to the Pig Game</h1>
+
+    <p id="note">This game requires 2 players</p>
+
+    <button class="btn start-game">Start Game</button>
+    <button class="btn how-to-play">How to Play</button>
+    <button class="btn about">About</button>
+
+    <div class="game-info">
+        <button id="close">&times;</button>
+        <h2>How to Play</h2>
+        <p id="game-rules">In this game, two players take turns rolling a die. The goal is to be the first player to reach 100 points. 
+        <br/>On each turn, a player can roll the die as many times as they want, but if they roll a 1, they lose all points for that turn.
+        <br/>If they roll any other number, they can choose to either keep the points or roll again.
+        <br/>The first player to reach 100 points wins!</p>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

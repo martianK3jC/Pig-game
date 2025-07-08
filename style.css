@@ -1,0 +1,95 @@
+html{
+    font-family: "Concert One", sans-serif;
+    color: #533B4D;
+}
+#game-title {
+    font-size: 10rem;
+    text-align: center;
+    color: #F564A9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #533B4D;
+    flex-direction: column;
+}
+
+.btn{
+    font-family: "Concert One", sans-serif;
+    padding: 5px 0px;
+    margin: 15px auto 10px auto;
+    display: inline-block;
+    width: 30rem;
+    height: 5rem;
+    color: #533B4D;
+    background-color: #FAA4BD;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#note{
+    font-size: 1.2rem;
+    color: #533B4D;
+    text-align: center;
+}
+
+#close {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: #533B4D;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.game-info{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+    background-color: #FAE3C6;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 3rem 5rem rgb(0,0,0,0.3);
+    z-index: 10;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+} */
+
+#game-rules {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.hide-info {
+    display: none;
+}
+
