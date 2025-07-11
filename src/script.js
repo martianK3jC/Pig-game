@@ -9,7 +9,7 @@ const closeButtons = document.querySelectorAll('.close');
 const overlay = document.querySelector('.overlay');
 
 const startGame = () => {
-    window.location.href = '/src/pig-game.html';
+    window.location.href = import.meta.env.BASE_URL + 'src/pig-game.html';
 }
 
 const close = () => {

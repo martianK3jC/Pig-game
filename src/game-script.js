@@ -64,7 +64,7 @@ btnRoll.addEventListener('click', function(){
     if(playingGame === true){
         let dice = Math.trunc(Math.random() * 6 + 1);
         diceEl.classList.remove('hidden');
-        diceEl.src = `/assets/DIE${dice}.png`;
+        diceEl.src = import.meta.env.BASE_URL + `assets/DIE${dice}.png`;
     
         if(dice !== 1){
             //Add dice to current  score
