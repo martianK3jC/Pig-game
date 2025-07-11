@@ -41,6 +41,7 @@ main {
   flex-direction: column;
   align-items: center;
   transition: all 0.75s;
+  opacity: 0.5;
 }
 
 /* ELEMENTS */
@@ -62,7 +63,8 @@ main {
 }
 
 .player--active {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
 }
 .player--active .name {
   font-weight: 700;
@@ -155,12 +157,18 @@ main {
 }
 
 .player--winner {
-  background-color: #533B4D;
+  background-color: #9eee9e;
+  opacity: 1;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #FAA4BD;
+  color: #2F4F4F;
+}
+
+.player--winner .score {
+  color: #2F4F4F;
+  z-index: 10;
 }
 
 .hidden {
