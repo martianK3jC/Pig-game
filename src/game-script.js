@@ -22,7 +22,7 @@ let currentScore = 0;
 btnRoll.addEventListener('click', function(){
     let dice = Math.trunc(Math.random() * 6 + 1);
     diceEl.classList.remove('hidden');
-    diceEl.scr = `DIE${dice}.png`;
+    diceEl.src = `/assets/DIE${dice}.png`;
 
     if(dice !== 1){
         //Add dice to current  score
