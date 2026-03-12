@@ -1,4 +1,8 @@
 'use strict';
+
+// Set background image using BASE_URL so it works on GitHub Pages
+document.getElementById('bg-home').src = import.meta.env.BASE_URL + 'assets/piggy.png';
+
 const startGameButton = document.querySelector('.start-game');
 const howToPlayButton = document.querySelector('.how-to-play');
 const aboutButton = document.querySelector('.about');

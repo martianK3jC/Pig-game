@@ -1,5 +1,8 @@
 'use strict';
 
+// Set background image using BASE_URL so it works on GitHub Pages
+document.getElementById('bg-game').src = import.meta.env.BASE_URL + 'assets/piggy.png';
+
 //Selecting elements
 const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');//Alt way of querySelector but for id
